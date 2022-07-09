@@ -10,7 +10,7 @@ export default class HailEditor {
 
 
     setContents(contents: EditorContents){
-        Object.values(contents).map(rows => {
+        (Object.values(contents) as FieldValue[]).map(rows => {
             if (typeof rows === 'string') {
 
             }else {
