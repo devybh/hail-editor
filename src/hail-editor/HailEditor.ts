@@ -1,28 +1,56 @@
+import Context from "./Core/Context";
+import AbstractRow from "./Components/RowComponents/AbstractRow";
+import {createCharComponentMap, createRowComponentMap} from "./Components";
+
 export default class HailEditor {
 
+    #context: Context
+
     constructor(private props: { element: Element }) {
-        console.log(this.props.element);
-        const shadow = this.props.element.attachShadow({mode: 'closed'})
-        shadow.appendChild(Object.assign(document.createElement('div'), {
-            innerText: '테스트',
-        }))
+
+        const rowComponentMap = createRowComponentMap()
+        const charComponentMap = createCharComponentMap()
+
+        this.#context = new Context({
+            ...props,
+            rowComponentMap,
+            charComponentMap
+        })
+    }
+
+    registerRowComponent(type: string, component: AbstractRow) {
+
+    }
+
+    registerCharComponent() {
+
     }
 
 
-    setContents(contents: EditorContents){
-        (Object.values(contents) as FieldValue[]).map(rows => {
-            if (typeof rows === 'string') {
+    async setContents(contents: EditorContents) {
+        // todo
+        // this.#context.dom.setContents(contents)
+        // (Object.values(contents) as FieldValue[]).map(rows => {
+        //     if (typeof rows === 'string') {
+        //
+        //     } else {
+        //         rows.forEach(row => {
+        //             if (typeof row === 'string') {
+        //
+        //             } else {
+        //
+        //             }
+        //         })
+        //     }
+        // })
+    }
 
-            }else {
-                rows.forEach(row => {
-                    if (typeof row === 'string') {
+    async getContents({flush = true}: { flush?: boolean }) {
+        // todo
+        if (flush) {
 
-                    } else {
-
-                    }
-                })
-            }
-        })
+        }
+        //return Map()
     }
 
 }

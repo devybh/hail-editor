@@ -81,31 +81,31 @@ const body = [
     '\n',
     'There is various row type. And you can make custom row type, or use custom row library.',
     {
-        T: 'youtube',
+        T: 'Youtube',
         id: 'jNQXAC9IVRw'
     },
     {
-        T: 'hr'
+        T: 'Hr'
     },
     {
-        T: 'iframe',
+        T: 'Code',
         V: '<iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     },
     {
-        T: 'hr',
+        T: 'Hr',
         className: 'hr-gap'
     },
     {
-        T: 'textBox',
+        T: 'TextBox',
         V: 'Text Box Variation',
         className: 'textBox-codeBlock'
     },
     {
-        T: 'hr',
+        T: 'Hr',
         className: 'hr-double'
     },
     {
-        T: 'textBox',
+        T: 'TextBox',
         V: 'Text Box Variation',
         className: 'textBox-blockQuote'
     }

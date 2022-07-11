@@ -6,7 +6,7 @@ type AnyRecord = Record<string, any>
 type UnknownRowContent = string | ({ T: string } & AnyRecord)
 
 type ParagraphRowContent = {
-    T: 'T',
+    T: 'P',
     F: (string | UnknownFragment)[]
     S?: { clear: 'both' }
 }

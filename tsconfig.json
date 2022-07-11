@@ -15,14 +15,16 @@
     "esModuleInterop": true,
     "noEmit": true,
     "noUnusedLocals": false,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "typeRoots": [
-      "src/hail-editor/types"
-    ]
+    "files": {
+      "*": [
+        "./src/hail-editor/types/*"
+      ]
+    }
   },
   "include": [
-    "src"
+    "./src/**/*"
   ]
 }
