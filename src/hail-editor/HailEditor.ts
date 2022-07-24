@@ -1,6 +1,8 @@
 import Context from "./Core/Context";
 import AbstractRow from "./Components/RowComponents/AbstractRow";
 import {createCharComponentMap, createRowComponentMap} from "./Components";
+import AbstractComponent from "./Components/AbstractComponent";
+import AbstractChar from "./Components/CharComponents/AbstractChar";
 
 export default class HailEditor {
 
@@ -18,14 +20,15 @@ export default class HailEditor {
         })
     }
 
-    registerRowComponent(type: string, component: AbstractRow) {
-
+    registerComponent(type: string, ComponentClass: typeof AbstractRow | typeof AbstractChar) {
+        if (ComponentClass.prototype instanceof AbstractRow) {
+            this.#context.props.rowComponentMap.set(type, ComponentClass)
+        } else if (ComponentClass instanceof AbstractChar) {
+            this.#context.props.charComponentMap.set(type, ComponentClass)
+        } else {
+            throw Error('component is not class extended AbstractRow | AbstractChr')
+        }
     }
-
-    registerCharComponent() {
-
-    }
-
 
     async setContents(contents: EditorContents) {
         // todo

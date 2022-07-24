@@ -4,15 +4,15 @@ import ImageRow from "./ImageRow";
 import YoutubeRow from "./YoutubeRow";
 import CodeRow from "./CodeRow";
 import HrRow from "./HrRow";
-import TextBoxRow from "./TextBoxRow";
+import StyledParagraphRow from "./StyledParagraphRow";
 
 export function createRowComponentMap(): Map<string, AbstractRow> {
     const map = new Map();
     map.set('Code', CodeRow);
-    map.set('Hr', HrRow);
+    map.set('HR', HrRow);
     map.set('I', ImageRow);
     map.set('P', ParagraphRow);
-    map.set('TextBox', TextBoxRow);
+    map.set('SP', StyledParagraphRow);
     map.set('Youtube', YoutubeRow);
     return map;
 }
