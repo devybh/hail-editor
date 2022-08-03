@@ -9,18 +9,23 @@ module.exports = defineConfig({
     ecmaVersion: 'latest',
     project: './tsconfig.json'
   },
-  plugins: [
-    '@typescript-eslint'
-  ],
   extends: [
     'airbnb-base',
     'airbnb-typescript/base',
-    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking'
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:@typescript-eslint/strict',
+    'plugin:prettier/recommended'
+  ],
+  plugins: [
+    '@typescript-eslint/tslint',
+    'prettier'
   ],
   rules: {
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error']
+    '@typescript-eslint/no-unused-vars': 'error',
+    'prettier/prettier': 'error',
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off'
   }
 })

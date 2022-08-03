@@ -1,5 +1,5 @@
 import { assert, expect, test } from 'vitest'
-import { stringToParagraphs } from '@editor/Utilities/compress-functions'
+import { stringToParagraphs } from '@editor/Utils/compress-functions'
 import ParagraphRow from '@editor/Components/RowComponents/ParagraphRow'// Edit an assertion and save to see HMR in action
 
 test('stringToParagraphs', () => {

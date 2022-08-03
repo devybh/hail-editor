@@ -18,18 +18,16 @@
     "noUnusedParameters": false,
     "noImplicitReturns": true,
     "skipLibCheck": true,
+    "declaration": true,
     "paths": {
       "@editor/*": [
         "./modules/hail-editor/*"
       ]
     }
   },
-  "files": [
-    "modules/hail-editor/main.ts"
-  ],
   "include": [
-    "src/**/*",
-    "test/**/*",
-    "hail-editor/**/*"
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "hail-editor/**/*.ts"
   ]
 }
