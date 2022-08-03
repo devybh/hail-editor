@@ -1,10 +1,14 @@
 import './style.scss'
-import HailEditor from "./hail-editor";
+import { HailEditor, makeConfig } from '@editor/index'
 
-const element = document.querySelector('#editor-area')!;
+makeConfig({
+  element: document.querySelector('#editor-area')!
+})
 
-const hailEditor = new HailEditor({
-    element
-});
+const hailEditor = new HailEditor(
+  makeConfig({
+    element: document.querySelector('#editor-area')!
+  })
+)
 
-Object.assign(window, {hailEditor})
+Object.assign(window, { hailEditor })

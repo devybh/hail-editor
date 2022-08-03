@@ -7,7 +7,7 @@
       "ESNext",
       "DOM"
     ],
-    "moduleResolution": "Node",
+    "moduleResolution": "NodeNext",
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -18,13 +18,18 @@
     "noUnusedParameters": false,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "files": {
-      "*": [
-        "./src/hail-editor/types/*"
+    "paths": {
+      "@editor/*": [
+        "./modules/hail-editor/*"
       ]
     }
   },
+  "files": [
+    "modules/hail-editor/main.ts"
+  ],
   "include": [
-    "./src/**/*"
+    "src/**/*",
+    "test/**/*",
+    "hail-editor/**/*"
   ]
 }
