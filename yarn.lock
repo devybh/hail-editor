@@ -1974,6 +1974,7 @@ __metadata:
     tslint: latest
     type-fest: latest
     typescript: latest
+    typescript-is: latest
     vite: latest
     vite-tsconfig-paths: latest
     vitest: latest
@@ -2694,6 +2695,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nested-error-stacks@npm:^2":
+  version: 2.1.1
+  resolution: "nested-error-stacks@npm:2.1.1"
+  checksum: 5f452fad75db8480b4db584e1602894ff5977f8bf3d2822f7ba5cb7be80e89adf1fffa34dada3347ef313a4288850b4486eb0635b315c32bdfb505577e8880e3
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:latest":
   version: 9.0.0
   resolution: "node-gyp@npm:9.0.0"
@@ -3056,6 +3064,13 @@ __metadata:
     slash: ^3.0.0
     tslib: ^1.9.3
   checksum: ee0a3fdbb6c4fa7124a93ef13b87f69f9a4e7bdd0be157ca98e1951ae8d1a7bbee2ebc25de6946b0b53426f804c712ff32f6c93b916b719e865c90233386a126
+  languageName: node
+  linkType: hard
+
+"reflect-metadata@npm:>=0.1.12":
+  version: 0.1.13
+  resolution: "reflect-metadata@npm:0.1.13"
+  checksum: 798d379a7b6f6455501145419505c97dd11cbc23857a386add2b9ef15963ccf15a48d9d15507afe01d4cd74116df8a213247200bac00320bd7c11ddeaa5e8fb4
   languageName: node
   linkType: hard
 
@@ -3562,7 +3577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsutils@npm:^3.21.0":
+"tsutils@npm:^3.17.1, tsutils@npm:^3.21.0":
   version: 3.21.0
   resolution: "tsutils@npm:3.21.0"
   dependencies:
@@ -3600,6 +3615,22 @@ __metadata:
   version: 2.18.0
   resolution: "type-fest@npm:2.18.0"
   checksum: 0737128d9d77b93793c6ee443e304462a792f5b723a6be035d6cb488c5610a8baa00522805421341c04324c80efba9849885bbfbc5a9623d0672fe8712969f62
+  languageName: node
+  linkType: hard
+
+"typescript-is@npm:latest":
+  version: 0.19.0
+  resolution: "typescript-is@npm:0.19.0"
+  dependencies:
+    nested-error-stacks: ^2
+    reflect-metadata: ">=0.1.12"
+    tsutils: ^3.17.1
+  peerDependencies:
+    typescript: ^4.1.5
+  dependenciesMeta:
+    reflect-metadata:
+      optional: true
+  checksum: 2d600446543ecf544e3dbdae49d2ccdb0c84348971fc6906d1a70fe5c3c98a8ab8d01f6a331eeccac5a01160207974d572a02b808238f4ce2b60261f3a664a48
   languageName: node
   linkType: hard
 

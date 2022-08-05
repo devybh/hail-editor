@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "lodash": "latest",
-    "type-fest": "latest"
+    "type-fest": "latest",
+    "typescript-is": "latest"
   }
 }

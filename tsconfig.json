@@ -7,7 +7,7 @@
       "ESNext",
       "DOM"
     ],
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node",
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -21,7 +21,7 @@
     "declaration": true,
     "paths": {
       "@editor/*": [
-        "./modules/hail-editor/*"
+        "./src/hail-editor/*"
       ]
     }
   },
