@@ -12,7 +12,7 @@
       ],
       "options": {
         "singleQuote": false,
-        "quoteProps": "preserve"
+        "quoteProps": "consistent"
       }
     },
     {

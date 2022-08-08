@@ -6,8 +6,7 @@ module.exports = defineConfig({
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 'latest',
-    project: './tsconfig.json'
+    ecmaVersion: 'latest'
   },
   extends: [
     'airbnb-base',
