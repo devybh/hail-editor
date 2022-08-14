@@ -1,9 +1,6 @@
 {
   "name": "hail-editor",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "packageManager": "yarn@3.2.2",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -15,7 +12,7 @@
   ],
   "main": "./dist/hail-editor.umd.js",
   "module": "./dist/hail-editor.es.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/hail-editor.d.ts",
   "exports": {
     ".": {
       "import": "./dist/hail-editor.es.js",
@@ -41,18 +38,40 @@
     "eslint-plugin-node": "latest",
     "eslint-plugin-prettier": "latest",
     "json": "latest",
+    "load-json-file": "latest",
     "prettier": "latest",
     "sass": "latest",
     "tslint": "latest",
+    "type-fest": "latest",
     "typescript": "latest",
+    "typescript-is": "latest",
     "vite": "latest",
     "vite-plugin-dts": "latest",
     "vite-tsconfig-paths": "latest",
     "vitest": "latest"
   },
   "dependencies": {
-    "lodash": "latest",
-    "type-fest": "latest",
-    "typescript-is": "latest"
+    "lodash": "latest"
+  },
+  "packageManager": "yarn@3.2.2",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Modern Web Text/Contents Editor",
+  "keywords": [
+    "editor",
+    "text editor"
+  ],
+  "homepage": "https://github.com/devybh/hail-editor",
+  "bugs": {
+    "url": "https://github.com/devybh/hail-editor/issues",
+    "email": "devybh@gmail.com"
+  },
+  "author": {
+    "name": "ByeongHwa Yoo",
+    "email": "devybh@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devybh/hail-editor.git"
   }
 }

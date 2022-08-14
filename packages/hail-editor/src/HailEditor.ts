@@ -6,6 +6,8 @@ import AbstractChar from './Abstracts/AbstractComponents/AbstractContentComponen
 // import { EditorContents } from './types/Contents'
 import { Config } from './config'
 
+console.log('test')
+
 export default class HailEditor {
   #context: Context
 

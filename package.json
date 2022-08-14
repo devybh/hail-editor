@@ -1,14 +1,20 @@
 {
-  "name": "hail-editor-project",
+  "name": "root",
+  "type": "commonjs",
+  "scripts": {
+    "dev-m": "yarn workspace manuscript dev",
+    "build": "yarn workspace hail-editor build"
+  },
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "load-json-file": "latest",
+    "typescript": "latest"
+  },
   "private": true,
   "workspaces": {
     "packages": [
       "./packages/*",
       "./sites/*"
     ]
-  },
-  "packageManager": "yarn@3.2.2",
-  "devDependencies": {
-    "typescript": "latest"
   }
 }

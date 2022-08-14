@@ -1,23 +1,19 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
+import './style.scss'
+import * as HailEditor from 'hail-editor'
+import { title, subtitle, body } from './sampleContents'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+console.log(HailEditor)
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// const editorAreaSelector = '#editor-area'
+// const editorArea = document.querySelector(editorAreaSelector)
+// if (!editorArea) throw Error(`${editorAreaSelector} is null`)
+//
+// const config = makeConfig({
+//   element: editorArea
+// })
+// const hailEditor = new HailEditor(config)
+//
+// const contentsMap = new Map(Object.entries({ title, subtitle, body }))
+// hailEditor.setContents(contentsMap)
+//
+// Object.assign(window, { hailEditor })

@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "hail-editor": "*",
+    "hail-editor": "../../packages/hail-editor",
+    "sass": "latest",
     "typescript": "latest",
     "vite": "latest"
   }
