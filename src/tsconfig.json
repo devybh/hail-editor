@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@h/*": ["./src/hail-editor/*"]
+      "@h/*": ["./hail-editor/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -22,5 +22,5 @@
     "declaration": true,
     "declarationMap": true
   },
-  "include": ["./src"]
+  "include": [""]
 }

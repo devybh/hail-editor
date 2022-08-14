@@ -1,5 +1,5 @@
-import '../packages/hail-editor/Types/AbstractProps'
-import sampleImage from '../../dev/img/sample.jpg'
+import 'hail-editor/Types/AbstractProps'
+import sampleImage from './images/sample.png'
 
 export const title = 'This is a title. Just Single Line String. Not Styleable.'
 export const subtitle = [

@@ -6,7 +6,10 @@ module.exports = defineConfig({
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 'latest'
+    ecmaVersion: 'latest',
+    project: [
+      './src'
+    ]
   },
   extends: [
     'airbnb-base',

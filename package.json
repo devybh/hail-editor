@@ -5,7 +5,6 @@
   "version": "0.0.0",
   "packageManager": "yarn@3.2.2",
   "description": "Modern Web Text/Contents Editor",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/devybh/hail-editor.git"
@@ -28,7 +27,6 @@
     "@typescript-eslint/typescript-estree": "latest",
     "@typescript-eslint/utils": "latest",
     "eslint": "latest",
-    "eslint-config-airbnb-base": "latest",
     "eslint-config-airbnb-typescript": "latest",
     "eslint-config-airbnb-typescript-prettier": "latest",
     "eslint-config-prettier": "latest",

@@ -1,6 +1,6 @@
 import './style.scss'
-import {HailEditor, makeConfig, ContentsConvertor} from './hail-editor'
-// import { title, subtitle, body } from './sampleContents'
+import { HailEditor, makeConfig, ContentsConvertor } from './hail-editor'
+import { title, subtitle, body } from './sampleContents'
 
 console.log(HailEditor)
 
