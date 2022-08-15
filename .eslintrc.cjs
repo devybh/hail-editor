@@ -7,9 +7,7 @@ module.exports = defineConfig({
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 'latest',
-    project: [
-      './src'
-    ]
+    project: ['./tsconfig.json']
   },
   extends: [
     'airbnb-base',
@@ -24,10 +22,10 @@ module.exports = defineConfig({
     'prettier'
   ],
   rules: {
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
-    'prettier/prettier': 'error',
-    'arrow-body-style': 'off',
-    'prefer-arrow-callback': 'off'
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/no-useless-constructor': 'off',
+    'no-console': 'off',
+    'class-methods-use-this': 'off'
   }
 })

@@ -2,8 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@h/*": ["./src/hail-editor/*"]
+      "@h/*": ["./src/HailEditor/*"]
     },
+    "typeRoots": ["./src/HailEditor/@types/**/*", "node_modules/@types"],
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "CommonJS",

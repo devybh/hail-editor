@@ -12,7 +12,7 @@ export default defineConfig({
   server: {},
   build: {
     lib: {
-      entry: './src/hail-editor/index.ts',
+      entry: './src/HailEditor/index.ts',
       name: 'HailEditor'
     },
     rollupOptions: {

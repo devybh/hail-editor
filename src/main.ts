@@ -1,17 +1,18 @@
 import './style.scss'
-import { HailEditor, makeConfig, ContentsConvertor } from './hail-editor'
-import { title, subtitle, body } from './sampleContents'
+import { HailEditor, ContentsConvertor } from './HailEditor'
+// import { title, subtitle, body } from './SampleContents/Compressed'
+import * as SampleContents from './SampleContents/Baisc'
 
-console.log(HailEditor)
+console.log({ HailEditor, SampleContents })
 
 // const editorAreaSelector = '#editor-area'
 // const editorArea = document.querySelector(editorAreaSelector)
 // if (!editorArea) throw Error(`${editorAreaSelector} is null`)
 //
-// const config = makeConfig({
+// const Config = makeConfig({
 //   element: editorArea
 // })
-// const hailEditor = new HailEditor(config)
+// const hailEditor = new HailEditor(Config)
 //
 // const contentsMap = new Map(Object.entries({ title, subtitle, body }))
 // hailEditor.setContents(contentsMap)
